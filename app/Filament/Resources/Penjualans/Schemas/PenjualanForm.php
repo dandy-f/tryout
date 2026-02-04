@@ -20,7 +20,7 @@ class PenjualanForm
                 TextInput::make('total_harga')
                 ->label('Total Harga'),
                 Select::make('pelanggan_id')
-                ->label('Pelanggan ID')
+                ->label('Nama Pelanggan')
                 ->relationship('pelanggan', 'nama_pelanggan'),
             ]);
     }

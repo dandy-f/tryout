@@ -17,16 +17,20 @@ class DetailPenjualansTable
             ->columns([
                 TextColumn::make('penjualan_id')
                     ->numeric()
-                    ->sortable(),
-                TextColumn::make('produk_id')
-                    ->numeric()
-                    ->sortable(),
+                    ->sortable()
+                    ->label('Penjualan ID'),
+                TextColumn::make('produk.nama_produk')
+                    ->sortable()
+                    ->label('Produk')
+                    ->label('Nama Produk'),
                 TextColumn::make('jumlah_produk')
                     ->numeric()
-                    ->sortable(),
+                    ->sortable()
+                    ->label('Jumlah Produk'),
                 TextColumn::make('subtotal')
                     ->numeric()
-                    ->sortable(),
+                    ->sortable()
+                    ->label('SubTotal'),
                 TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()

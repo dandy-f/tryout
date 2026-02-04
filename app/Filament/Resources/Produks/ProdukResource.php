@@ -20,7 +20,8 @@ class ProdukResource extends Resource
 {
     protected static ?string $model = Produk::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::Bars3BottomRight;
+    protected static ?string $navigationLabel = ('Products'); // custom label
 
     protected static ?string $recordTitleAttribute = 'Produk';
 

@@ -20,7 +20,7 @@ class PelangganResource extends Resource
 {
     protected static ?string $model = Pelanggan::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::UserGroup;
     protected static ?string $navigationLabel = ('Customers'); // custom label
 
     protected static ?string $recordTitleAttribute = 'Pelanggan';

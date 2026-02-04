@@ -20,7 +20,8 @@ class PenjualanResource extends Resource
 {
     protected static ?string $model = Penjualan::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::ShoppingBag;
+    protected static ?string $navigationLabel = ('Sale'); // custom label
 
     protected static ?string $recordTitleAttribute = 'Penjualan';
 

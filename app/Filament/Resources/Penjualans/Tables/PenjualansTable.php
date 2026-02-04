@@ -23,8 +23,9 @@ class PenjualansTable
                 ->label('Tanggal Penjualan'),
                 TextColumn::make('total_harga')
                 ->label('Total Harga'),
-                TextColumn::make('pelanggan_id')
-                ->label('Pelanggan ID'),
+                TextColumn::make('pelanggan.nama_pelanggan')
+                ->label('Nama Pelanggan')
+                ->sortable(),
                 TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
